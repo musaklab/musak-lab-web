@@ -1,5 +1,0 @@
-.git
-.git/*
-.gitignore
-.DS_Store
-deploy.mjs
