@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Equipos de Sonido Profesional e Iluminación en Barcelona | MUSAK LAB</title>
+
+    <!-- Meta Básicas -->
+    <meta name="description"
+        content="Musak Lab: Empresa líder en alquiler de equipos de sonido profesional, iluminación y organización de eventos en Barcelona. Cabinas DJ, material audiovisual y sistemas premium para bodas, conciertos y fiestas. Más de 25 años de experiencia.">
+    <meta name="keywords"
+        content="alquiler de sonido, alquiler de equipos de sonido profesional, alquiler iluminacion barcelona, cabinas DJ, alquiler altavoces, organización de eventos, Pioneer DJ, Electro-Voice, Musak Lab Barcelona">
+    <meta name="author" content="Musak Lab">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://musaklab.com/" />
+
+    <!-- Open Graph / Redes Sociales (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musaklab.com/">
+    <meta property="og:title" content="Alquiler de Sonido e Iluminación en Barcelona | MUSAK LAB">
+    <meta property="og:description"
+        content="Especialistas en alquiler de sonido profesional, iluminación y organización de eventos en Barcelona. Los mejores sistemas del mercado.">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dn9envyqj/image/upload/v1771746282/Musak_lab_B_m9z2q1.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://musaklab.com/">
+    <meta name="twitter:title" content="Alquiler de Sonido e Iluminación | MUSAK LAB">
+    <meta name="twitter:description"
+        content="Especialistas en alquiler de sonido profesional, iluminación y organización de eventos en Barcelona. Los mejores sistemas del mercado.">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/dn9envyqj/image/upload/v1771746282/Musak_lab_B_m9z2q1.png">
+
+    <!-- 1. SEO Rich Snippets & Estructura de Datos (Structured Data) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "MUSAK LAB",
+      "image": "https://res.cloudinary.com/dn9envyqj/image/upload/v1771746282/Musak_lab_B_m9z2q1.png",
+      "description": "Servicio de alquiler de equipos de sonido e iluminación para todo tipo de eventos en Barcelona y alrededores. Más de 25 años de experiencia.",
+      "url": "https://musaklab.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barcelona",
+        "addressRegion": "Cataluña",
+        "addressCountry": "ES"
+      },
+      "areaServed": "Barcelona y alrededores",
+      "priceRange": "$$",
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Alquiler de equipos de sonido e iluminación"
+        }
+      }
+    }
+    </script>
+
+    <!-- 2. Google Fonts (Inter para estética moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* 
+         * DECISIONES DE DISEÑO (CSS):
+         * - Variables CSS: Centralizan la paleta "Rojo-Negro" para coherencia extrema.
+         * - Typography Fluida: Uso de `clamp()` para una experiencia responsive perfecta sin media queries excesivas.
+         * - Grid/Flexbox: Layout moderno e imperativo para el Bento Grid.
+         */
+
+        :root {
+            /* Paleta Rojo-Negro Premium */
+            --bg-dark: #0a0a0a;
+            --bg-light: #181818;
+            --accent-red: #e50914;
+            --accent-red-hover: #b20710;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --font-main: 'Inter', system-ui, sans-serif;
+
+            /* Tipografía Fluida */
+            --fs-h1: clamp(2.5rem, 5vw + 1rem, 5rem);
+            --fs-h2: clamp(2rem, 4vw + 1rem, 3.5rem);
+            --fs-body: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
+            --spacing-section: clamp(4rem, 8vw, 8rem);
+        }
+
+        /* Reset de CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            /* Scroll nativo suave */
+        }
+
+        /* Utilidades Base */
+        h1,
+        h2,
+        h3 {
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .text-accent {
+            color: var(--accent-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: var(--fs-h2);
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        /* Botón CTA (Call to Action) - Enfoque a Conversión */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-red-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+        }
+
+        /* Navegación Fija con Efecto Glassmorphism */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-main);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Sección Hero - Alto Impacto Visual */
+        /* Usa un gradiente radial rojo de fondo para el vibe oscuro/premium */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 5rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Destello rojo pequeño en el centro, se difumina a negro en todos los laterales */
+            background: radial-gradient(ellipse 55% 40% at center, rgba(229, 9, 20, 0.4) 0%, rgba(229, 9, 20, 0.08) 50%, var(--bg-dark) 75%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: var(--fs-h1);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: var(--fs-body);
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        /* Servicios / Features: Bento Grid Moderno */
+        /* Este layout asimétrico genera mucho más dinamismo visual que simples tarjetas cuadradas */
+        .services {
+            padding: var(--spacing-section) 0;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            grid-auto-rows: minmax(280px, auto);
+        }
+
+        .bento-item {
+            background-color: var(--bg-light);
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .bento-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+            border-color: rgba(229, 9, 20, 0.4);
+        }
+
+        .bento-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.2) 60%, transparent 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .bento-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.35;
+            z-index: 0;
+            /* Blanco y negro por defecto, transición suave a color en hover */
+            filter: grayscale(100%);
+            transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.5s ease;
+        }
+
+        .bento-item:hover .bento-bg {
+            opacity: 0.55;
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+
+        .bento-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .bento-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .bento-content p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Expandiendo ítems específicos para efecto 'Bento Box' */
+        @media (min-width: 850px) {
+            .bento-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+
+            .bento-item:nth-child(1) h3 {
+                font-size: 2.5rem;
+            }
+
+            .bento-item:nth-child(4) {
+                grid-column: span 2;
+            }
+        }
+
+        /* Social Proof / Testimonios (Estética Minimalista Cuidada) */
+        .social-proof {
+            padding: var(--spacing-section) 0;
+            background-color: var(--bg-light);
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--bg-dark);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--accent-red);
+            position: relative;
+        }
+
+        /* Comillas de fondo */
+        .testimonial-card::before {
+            content: "“";
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 5rem;
+            font-family: Georgia, serif;
+            color: rgba(255, 255, 255, 0.05);
+            line-height: 1;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #d0d0d0;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .author {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--accent-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* CTA Final y Footer */
+        .cta-final {
+            padding: var(--spacing-section) 0;
+            text-align: center;
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+        }
+
+        /* Clases para Animaciones de Aparición (Intersection Observer) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--bg-dark);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                z-index: 999;
+                gap: 3rem;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.5rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                z-index: 1001;
+            }
+        }
+
+        /* Modal / Lightbox Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: var(--bg-light);
+            width: 90%;
+            max-width: 800px;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transform: translateY(30px);
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+        }
+
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2010;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .modal-close:hover {
+            background: var(--accent-red);
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .modal-body {
+                flex-direction: row;
+            }
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .modal-image {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        .modal-info {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Configuración unificada para todos los modales de producto (CDJ, DJM, Monitores, etc.) */
+        #modal-monitores .modal-content,
+        #modal-cdj .modal-content,
+        #modal-djm .modal-content,
+        #modal-v10 .modal-content,
+        #modal-xdj .modal-content,
+        #modal-micro .modal-content,
+        #modal-pack .modal-content,
+        #modal-sonido .modal-content,
+        #modal-organizacion .modal-content,
+        #modal-cabinas .modal-content {
+            max-width: 1100px;
+        }
+
+        @media (min-width: 768px) {
+
+            #modal-monitores .carousel-container,
+            #modal-cdj .carousel-container,
+            #modal-djm .carousel-container,
+            #modal-v10 .carousel-container,
+            #modal-xdj .carousel-container,
+            #modal-micro .carousel-container,
+            #modal-pack .carousel-container,
+            #modal-sonido .carousel-container,
+            #modal-organizacion .carousel-container,
+            #modal-cabinas .carousel-container {
+                width: 70%;
+                /* Aproximadamente 3/4 */
+            }
+
+            #modal-monitores .modal-info,
+            #modal-cdj .modal-info,
+            #modal-djm .modal-info,
+            #modal-v10 .modal-info,
+            #modal-xdj .modal-info,
+            #modal-micro .modal-info,
+            #modal-pack .modal-info,
+            #modal-sonido .modal-info,
+            #modal-organizacion .modal-info,
+            #modal-cabinas .modal-info {
+                width: 30%;
+                /* El resto */
+                padding: 2rem;
+            }
+        }
+
+        .modal-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .modal-info p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .modal-info ul {
+            list-style-position: inside;
+            color: #d0d0d0;
+            margin-bottom: 2rem;
+        }
+
+        .modal-info li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Cart Sidebar Styles */
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: var(--bg-light);
+            z-index: 3000;
+            transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cart-sidebar.active {
+            right: 0;
+        }
+
+        .cart-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(4px);
+            z-index: 2999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .cart-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .cart-header {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cart-header h3 {
+            font-size: 1.35rem;
+            margin: 0;
+        }
+
+        .cart-close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .cart-close-btn:hover {
+            color: var(--accent-red);
+        }
+
+        .cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cart-item-info h4 {
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .cart-item-info p {
+            color: var(--accent-red);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .cart-item-remove {
+            background: rgba(255, 255, 255, 0.05);
+            border: none;
+            color: var(--text-muted);
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .cart-item-remove:hover {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .cart-empty-message {
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+
+        .cart-footer {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: var(--bg-dark);
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .cart-trigger {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .cart-trigger:hover {
+            color: var(--accent-red);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--accent-red);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 800;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transform: translate(25%, -25%);
+        }
+
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        @media (min-width: 768px) {
+            .carousel-container {
+                width: 65%;
+                /* Increased from 50% */
+                height: auto;
+                min-height: 400px;
+            }
+
+            .modal-pack-info {
+                width: 35%;
+                /* The rest of the space */
+            }
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            transition: transform 0.4s ease-in-out;
+            object-fit: cover;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .carousel-btn:hover {
+            background: var(--accent-red);
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+
+        .carousel-text-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(229, 9, 20, 0.8);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            /* Animación para que aparezca con la imagen */
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .carousel-slide-wrapper {
+            min-width: 100%;
+            position: relative;
+            transition: transform 0.4s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Usamos la misma clase que usan los slides para Mover el Wrapper */
+        .carousel-slide-wrapper.carousel-slide {
+            height: 100%;
+        }
+
+        .carousel-slide-wrapper .carousel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-slide-wrapper.active-overlay .carousel-text-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .carousel-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .carousel-indicator.active {
+            background: var(--accent-red);
+        }
+
+        /* ===== ESTILOS MODAL PRESUPUESTO ===== */
+        .presupuesto-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 4000;
+            overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .presupuesto-modal.active {
+            display: flex;
+            opacity: 1;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .presupuesto-content {
+            background: var(--bg-light);
+            width: 100%;
+            max-width: 780px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 3rem;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+            margin: auto;
+        }
+
+        .presupuesto-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(255, 255, 255, 0.06);
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .presupuesto-close:hover {
+            background: var(--accent-red);
+        }
+
+        .presupuesto-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .presupuesto-content>p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .form-section-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-red);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 600px) {
+            .product-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            gap: 0.5rem;
+            transition: border-color 0.3s;
+        }
+
+        .product-item:has(input[type=checkbox]:checked) {
+            border-color: rgba(229, 9, 20, 0.5);
+            background: rgba(229, 9, 20, 0.06);
+        }
+
+        .product-item label {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            flex-grow: 1;
+        }
+
+        .product-item input[type=checkbox] {
+            accent-color: var(--accent-red);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .product-qty {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            padding: 0.2rem 0.4rem;
+            font-size: 0.85rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-top: 0.75rem;
+        }
+
+        .cal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .cal-nav {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+
+        .cal-nav:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .cal-month-label {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .cal-day-header {
+            text-align: center;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            padding: 0.3rem 0;
+        }
+
+        .cal-day {
+            text-align: center;
+            padding: 0.5rem 0.2rem;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .cal-day:hover:not(.empty):not(.past) {
+            background: rgba(229, 9, 20, 0.25);
+        }
+
+        .cal-day.past {
+            color: rgba(255, 255, 255, 0.2);
+            cursor: default;
+        }
+
+        .cal-day.today {
+            border: 1px solid var(--accent-red);
+            font-weight: bold;
+        }
+
+        .cal-day.selected-start,
+        .cal-day.selected-end {
+            background: var(--accent-red);
+            color: white;
+            font-weight: 700;
+        }
+
+        .cal-day.in-range {
+            background: rgba(229, 9, 20, 0.18);
+        }
+
+        .cal-day.empty {
+            cursor: default;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
+        }
+
+        .form-field label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .form-field input,
+        .form-field textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            font-family: var(--font-main);
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-field input:focus,
+        .form-field textarea:focus {
+            border-color: var(--accent-red);
+        }
+
+        .form-field textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .presupuesto-content {
+                padding: 2rem 1.25rem;
+            }
+        }
+
+        .date-display {
+            margin-top: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(229, 9, 20, 0.08);
+            border: 1px solid rgba(229, 9, 20, 0.2);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            min-height: 2.5rem;
+        }
+
+        /* ===== SCROLL DOWN INDICATOR ===== */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            z-index: 2;
+        }
+
+        .scroll-indicator:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .scroll-indicator .chevron {
+            width: 28px;
+            height: 28px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: rotate(45deg);
+            animation: scrollBounce 1.6s ease-in-out infinite;
+        }
+
+        @keyframes scrollBounce {
+
+            0%,
+            100% {
+                transform: rotate(45deg) translateY(0);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: rotate(45deg) translateY(6px);
+                opacity: 1;
+            }
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            padding: 100px 0;
+            background: rgba(10, 10, 10, 0.5);
+        }
+
+        .contact-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+        }
+
+        #captcha-code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: var(--accent-red);
+            padding: 0.5rem 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            user-select: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo_black_red.png" alt="MUSAK LAB Logo"
+                    style="height: 90px; width: auto; object-fit: contain;">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#equipos">Catálogo</a></li>
+                <li><a href="#clientes">Experiencias</a></li>
+                <li><a href="#contacto-directo">Contacto</a></li>
+                <li class="nav-actions">
+                    <button class="cart-trigger" aria-label="Ver cesta">
+                        🛒
+                        <span class="cart-badge" id="cart-count">0</span>
+                    </button>
+                    <a href="#contacto" class="btn"
+                        style="padding: 0.6rem 1.5rem; font-size: 0.95rem; box-shadow:none; white-space: nowrap;">¿Qué
+                        necesitas?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero Principal -->
+    <!-- Contiene CopyPersuasivo y CTA Principal -->
+    <header id="inicio" class="hero container">
+        <div class="hero-content reveal">
+            <h1>Alquiler de sonido e iluminación <br><span class="text-accent">profesional para eventos</span></h1>
+            <p>Elevamos el estándar de tus eventos
+                a otro nivel.</p>
+            <div style="display:flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="#contacto" class="btn">¿Qué necesitas?</a>
+                <a href="#equipos" class="btn"
+                    style="background: transparent; border: 1px solid rgba(255,255,255,0.2); box-shadow: none;">Ver
+                    Catálogo</a>
+            </div>
+        </div>
+        <a href="#equipos" class="scroll-indicator" aria-label="Scroll hacia abajo">
+            <div class="chevron"></div>
+        </a>
+    </header>
+
+    <!-- Sección Servicios / Features (Bento Grid) -->
+    <!-- Optimizado con imágenes ilustrativas de carga diferida (lazy load) para Lighthouse 90+ -->
+    <section id="equipos" class="services container">
+        <h2 class="section-title reveal"
+            style="text-align: left; margin: 0 0 4rem 0; padding: 0; position: relative; left: 0;"> Nuestro <span
+                class="text-accent">Catálogo de Alquiler</span>
+        </h2>
+
+        <div class="bento-grid">
+            <!-- Bento Box 1: Gran formato -->
+            <article class="bento-item reveal" id="trigger-cabinas" style="cursor: pointer;">
+                <!-- Usar placeholder premium mientras se inyectan las reales -->
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771761354/dj-playing-musics-live-concert-festival_v9rkkp.jpg"
+                    alt="Cabinas y setup dj a tu medida" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Cabinas y Dj Sets a medida</h3>
+                    <p>Para todo tipo eventos, discotecas, bares, festivales de música, bodas, fiestas privadas...
+                        <br><span
+                            style="color: var(--accent-red); font-size: 0.9em; margin-top: 8px; display: inline-block;">Ver
+                            vídeos y detalles &rarr;</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bento Box 2 -->
+            <article class="bento-item reveal" style="transition-delay: 0.1s;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771748894/tecnicos_uvjncg.png"
+                    alt="Organización de eventos" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Quienes somos</h3>
+                    <p>Musak Lab es una empresa de servicios de alquiler de equipos de sonido e iluminación para todo
+                        tipo
+                        de eventos en Barcelona y alrededores. Disponemos de soluciones adaptadas a eventos, conciertos,
+                        conferencias, bodas... con opciones para espacios interiores y exteriores.
+                        Nos avala los más de 25 años de experiencia en el sector organizando eventos.</p>
+                </div>
+            </article>
+            <!-- Bento Box 5 -->
+            <article class="bento-item reveal" id="trigger-sonido" style="cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771761847/fondo-abstracto-es-rejilla-metal-negro-primer-plano-altavoz-textura-rejilla-altavoz-hierro-negro_345343-5270_qgcxlr.jpg"
+                    alt="Sub Electro-Voice ETX 18SP" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Sistema de sonido</h3>
+                    <p>Disponemos de diferentes packs de alquiler de sonido a medida para que tu evento sea un éxito.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Bento Box 4: Apaisada -->
+            <article class="bento-item reveal" id="trigger-pack" style="cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771749004/CDJ-3000X_set7_250729_rfqtjm.webp"
+                    alt="Microfonía e Iluminación" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Configura o elige tu propio pack</h3>
+                    <p>Te ofrecemos alquiler de equipos de sonido y material audiovisual en Barcelona para todo tipo de
+                        eventos, desde reuniones y conferencias hasta conciertos y fiestas, en espacios interiores o
+                        exteriores. Disponemos de packs completos y trabajamos con marcas nº1 en el sector.</p>
+                </div>
+            </article>
+            <!-- Bento Box 5 -->
+            <article class="bento-item reveal" id="trigger-sonido" style="cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771750936/Gemini_Generated_Image_vv1u5bvv1u5bvv1u_j2zeq0.png"
+                    alt="Sub Electro-Voice ETX 18SP" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Sistema de iluminación</h3>
+                    <p>No busques mas, tenemos todo lo necesario para que tu evento sea un éxito.</p>
+                </div>
+            </article>
+
+            <!-- Bento Box 6 -->
+            <article class="bento-item reveal" id="trigger-cdj" style="transition-delay: 0.1s; cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771750123/208602780_htu1nf.jpg"
+                    alt="Reproductor CDJ-3000x" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>CDJ 3000x AlphaTheta</h3>
+                    <p>Sublime. El estándar indiscutible en la cabinas</p>
+                    <div class="price-tag">120 € / día</div>
+                </div>
+            </article>
+
+            <!-- Bento Box 7 -->
+            <article class="bento-item reveal" id="trigger-djm" style="transition-delay: 0.2s; cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771750388/A9_rgh0f1.png"
+                    alt="Mixer Pioneer DJ DJM-A9" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Pioneer DJM A9</h3>
+                    <p>Mesa profesional de 4 canales estéreo. Calidad de audio superior y nuevos FX.</p>
+                    <div class="price-tag">100 € / día</div>
+                </div>
+            </article>
+
+            <!-- Bento Box 8 -->
+            <article class="bento-item reveal" id="trigger-v10" style="cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771762845/v10-2_w0zrnx.png"
+                    alt="Sistema todo en uno AlphaTheta XDJ-AZ" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Pioneer DJM V10</h3>
+                    <p>Mezclador profesional digital de 6 canales. La joya de la corona</p>
+                    <div class="price-tag">120 € / día</div>
+                </div>
+            </article>
+
+            <!-- Bento Box 8b (duplicado XDJ-AZ) -->
+            <article class="bento-item reveal" id="trigger-xdj" style="transition-delay: 0.1s; cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753901/AZ_ingnjw.png"
+                    alt="Sistema todo en uno AlphaTheta XDJ-AZ" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>AlphaTheta XDJ AZ</h3>
+                    <p>Todo en uno con sonido profesional.</p>
+                    <div class="price-tag">190 € / día</div>
+                </div>
+            </article>
+
+            <!-- Bento Box 9 -->
+            <article class="bento-item reveal" id="trigger-monitores" style="transition-delay: 0.1s; cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771796340/2x_ALTO_TS415___Conjunto_tripode_altavoz_con_funda_h9fuyn.jpg"
+                    alt="Monitor EV ZLX-12BT" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Monitores cabina</h3>
+                    <p>Ideal como monitor y con conectividad Bluetooth.</p>
+                    <div class="price-tag">120 € / día</div>
+                </div>
+            </article>
+
+            <!-- Bento Box 10 -->
+            <article class="bento-item reveal" id="trigger-micro" style="transition-delay: 0.2s; cursor: pointer;">
+                <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771797215/preview_l11ceu.jpg"
+                    alt="Microfonía Inalámbrica Shure" class="bento-bg" loading="lazy">
+                <div class="bento-content">
+                    <h3>Micrófonía Inalámbrica</h3>
+                    <p>Rendimiento, vocal claro y sin cortes.</p>
+                    <div class="price-tag">30 € / día</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios / Social Proof -->
+    <!-- Genera confianza para aumentar conversión -->
+    <section id="clientes" class="social-proof">
+        <div class="container">
+            <h2 class="section-title reveal">Clientes satisfechos con <span class="text-accent">nuestro
+                    trabajo</span>
+            </h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <p class="quote">Los 3000x son una maravilla. Es una placer trabajar con material nuevo de última
+                        generación. volveremos a confiar sin duda en Musak Lab para nuestros próximos eventos.</p>
+                    <div class="author">Marcos V.</div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                    <p class="quote">Necesitábamos un sistema PA para una conferencia de 100 personas. El equipo de
+                        MUSAK se encargó de todo con total profesionalidad</p>
+                    <div class="author">Evento corporativo</div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                    <p class="quote">Brutal la pegada de los subwoofers Electro-Voice es algo de otro mundo. Sin duda,
+                        son
+                        nuestro partner de sonido de ahora en adelante para cada fiesta.</p>
+                    <div class="author">Rertex</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserva-seccion" class="cta-final container reveal">
+        <h2 style="font-size: var(--fs-h2); margin-bottom: 2rem;">¿Listo para llevar tu evento al <span
+                class="text-accent">siguiente nivel</span>?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem;">Contáctanos hoy mismo para asegurar
+            disponibilidad y equipar tu evento con el mejor estándar de la industria. Con servicio de transporte a toda
+            Barcelona y alrededores </p>
+        <button id="open-presupuesto" class="btn" style="padding: 1.2rem 3rem; font-size: 1.2rem;">Solicitar
+            Presupuesto</button>
+    </section>
+
+    <!-- ===== NUEVA SECCIÓN DE CONTACTO ===== -->
+    <section id="contacto-directo" class="contact-section reveal">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2 class="section-title" style="margin-bottom: 2rem; text-align: center;">Formulario de <span
+                            class="text-accent">Contacto</span></h2>
+                    <form id="direct-contact-form">
+                        <div class="form-field">
+                            <label for="contact-name">Nombre + Apellidos *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Tu nombre completo">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="contact-email">E-mail *</label>
+                                <input type="email" id="contact-email" name="contact-email" required
+                                    placeholder="Ej: minombre@ejemplo.com / example@example.com">
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-tel">Número de Teléfono *</label>
+                                <input type="tel" id="contact-tel" name="tel" required placeholder="600 000 000">
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="contact-msg">Comentarios</label>
+                            <textarea id="contact-msg" name="msg" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+
+                        <div class="captcha-container">
+                            <div id="captcha-code"></div>
+                            <div class="form-field" style="margin: 0; flex-grow: 1;">
+                                <label for="captcha-input" style="font-size: 0.75rem;">Por favor verifique que usted es
+                                    humano *</label>
+                                <input type="text" id="captcha-input" name="captcha" required
+                                    placeholder="Escribe el código">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn"
+                            style="width: 100%; padding: 1rem; margin-top: 1rem;">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MUSAK LAB. Soluciones Integrales de Sonido Profesional.</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL FORMULARIO DE PRESUPUESTO ===== -->
+    <div class="presupuesto-modal" id="presupuesto-modal">
+        <div class="presupuesto-content">
+            <button class="presupuesto-close" id="close-presupuesto">&#10005;</button>
+            <h2>Formulario de <span class="text-accent">Presupuesto</span></h2>
+            <p>Selecciona los equipos que necesitas, el rango de fechas y déjanos tus datos. Te responderemos en menos
+                de 12h.</p>
+
+            <form id="presupuesto-form" onsubmit="handlePresupuesto(event)">
+
+                <div class="form-section-title">Tipo de Evento</div>
+                <div class="form-field" style="margin-top: 0;">
+                    <label for="pres-tipo">Selecciona el tipo de evento *</label>
+                    <select id="pres-tipo" name="tipo" required
+                        style="background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.95rem; font-family: var(--font-main); outline: none; cursor: pointer; transition: border-color 0.3s; -webkit-appearance: none; appearance: none; background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23aaa%22><path d=%22M7 10l5 5 5-5z%22/></svg>'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1.5rem;">
+                        <option value="" disabled selected style="color:#888;">-- Elige el tipo de evento --</option>
+                        <option value="Evento profesional" style="color: black;">Evento profesional</option>
+                        <option value="Evento corporativo" style="color: black;">Evento corporativo</option>
+                        <option value="Fiesta privada" style="color: black;">Fiesta privada</option>
+                        <option value="Boda" style="color: black;">Boda</option>
+                        <option value="Cumpleaños" style="color: black;">Cumpleaños</option>
+                        <option value="Ceremonia" style="color: black;">Ceremonia</option>
+                        <option value="Otros" style="color: black;">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-section-title">Equipamiento</div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Cabinas y setups de DJ">Cabina completa
+                            de DJ. (setup y sonido)</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Organizacion de eventos">Cabina completa
+                            de DJ. (solo setup)</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Sistema de sonido e iluminacion">Sistema
+                            de sonido</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Configura tu propio pack">Organizar un
+                            evento (Boda, fiesta privada, etc...)</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="CDJ-3000x">CDJ-3000x</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="4">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Pioneer DJM-A9">Pioneer DJM-A9</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="4">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Pioneer DJM V10">Pioneer DJM V10</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="4">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="AlphaTheta XDJ-AZ">AlphaTheta
+                            XDJ-AZ</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="4">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Monitores Alto 15TS">Monitores Alto
+                            15TS</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                    <div class="product-item">
+                        <label><input type="checkbox" name="productos" value="Microfono Inalambrico Shure">Micrófono
+                            Shure Inalambrico</label>
+                        <input type="number" class="product-qty" value="1" min="1" max="10">
+                    </div>
+                </div>
+
+                <div class="form-section-title">Fechas de Reserva</div>
+                <div class="cal-header">
+                    <button type="button" class="cal-nav" id="cal-prev">&lsaquo;</button>
+                    <span class="cal-month-label" id="cal-month-label"></span>
+                    <button type="button" class="cal-nav" id="cal-next">&rsaquo;</button>
+                </div>
+                <div class="calendar-grid" id="calendar-days-header">
+                    <div class="cal-day-header">Lu</div>
+                    <div class="cal-day-header">Ma</div>
+                    <div class="cal-day-header">Mi</div>
+                    <div class="cal-day-header">Ju</div>
+                    <div class="cal-day-header">Vi</div>
+                    <div class="cal-day-header">Sá</div>
+                    <div class="cal-day-header">Do</div>
+                </div>
+                <div class="calendar-grid" id="calendar-grid"></div>
+                <div class="date-display" id="date-display">Selecciona la fecha de inicio del evento.
+                </div>
+                <input type="hidden" id="fecha-inicio" name="fecha-inicio">
+                <input type="hidden" id="fecha-fin" name="fecha-fin">
+
+                <div class="form-section-title">Tus Datos</div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="pres-nombre">Nombre completo *</label>
+                        <input type="text" id="pres-nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-field">
+                        <label for="pres-telefono">Teléfono *</label>
+                        <input type="tel" id="pres-telefono" name="telefono" required placeholder="+34 600 000 000">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="pres-email">Email *</label>
+                    <input type="email" id="pres-email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-field">
+                    <label for="pres-lugar">Lugar del evento</label>
+                    <input type="text" id="pres-lugar" name="lugar" placeholder="Ciudad, recinto o dirección">
+                </div>
+                <div class="form-field">
+                    <label for="pres-horario">Horario del evento</label>
+                    <input type="text" id="pres-horario" name="horario" placeholder="Ej: 20:00 – 04:00">
+                </div>
+                <div class="form-field">
+                    <label for="pres-notas">Notas adicionales</label>
+                    <textarea id="pres-notas" name="notas" placeholder="Cuéntanos más sobre tu evento..."></textarea>
+                </div>
+
+                <!-- Aviso bloqueador de ventanas emergentes -->
+                <div
+                    style="margin-top: 1.5rem; padding: 0.9rem 1.2rem; background: rgba(255,180,0,0.08); border: 1px solid rgba(255,180,0,0.3); border-radius: 10px; display: flex; gap: 0.75rem; align-items: flex-start;">
+                    <span style="font-size: 1.3rem; flex-shrink:0;">⚠️</span>
+                    <p style="font-size: 0.85rem; color: #d0b060; line-height: 1.5; margin: 0;">
+                        <strong>Importante:</strong> Al enviar, se abrirá tu cliente de email (Gmail, Outlook, Apple
+                        Mail...) con el presupuesto ya redactado.<br>
+                        Si no se abre nada, <strong>desactiva el bloqueador de ventanas emergentes</strong> de tu
+                        navegador para este sitio y vuelve a intentarlo.
+                    </p>
+                </div>
+
+                <button type="submit" class="btn"
+                    style="width:100%; margin-top:1.2rem; padding:1rem; font-size:1rem;">Enviar solicitud de
+                    presupuesto
+                    →</button>
+
+                <!-- Texto legal LOPD -->
+                <p
+                    style="margin-top: 1.5rem; font-size: 0.7rem; color: rgba(255,255,255,0.3); line-height: 1.6; text-align: justify;">
+                    En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de
+                    Datos de Carácter Personal, le comunicamos que los datos que usted nos facilite quedarán
+                    incorporados y serán tratados en los ficheros titularidad de Musak Lab con el fin de poderle prestar
+                    nuestros servicios, así como para mantenerle informado sobre cuestiones relativas a la actividad de
+                    la Empresa. Musak Lab se compromete a tratar de forma confidencial los datos de carácter personal
+                    facilitados y a no comunicar o ceder dicha información a terceros. Asimismo, le informamos de la
+                    posibilidad que tiene de ejercer los derechos de acceso, rectificación, cancelación y oposición de
+                    sus datos de carácter personal de forma presencial en las oficinas de Musak Lab, acompañando copia
+                    de DNI, o bien mediante correo postal.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Monitores Alto TS4 -->
+    <div class="modal" id="modal-monitores">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771796352/main_8c556d4a_piha2y.jpg"
+                        class="carousel-slide" alt="Monitores Alto Professional TS4">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771796340/2x_ALTO_TS415___Conjunto_tripode_altavoz_con_funda_h9fuyn.jpg"
+                        class="carousel-slide" alt="Conjunto Monitores Alto con Trípodes">
+
+                    <button class="carousel-btn prev" id="monitores-prev">❮</button>
+                    <button class="carousel-btn next" id="monitores-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3 style="margin-bottom: 1.5rem;">Monitores Alto 15TS 2500w</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">La línea completamente
+                        nueva de altavoces profesionales Alto Professional TS4 trae excelentes
+                        soluciones para instalación y movilidad. El amplificador biamplificado de 2500 W de nuevo diseño
+                        proporciona un sonido verdaderamente de alto rendimiento sin concesiones ni limitaciones.</p>
+                    <ul style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">
+                        <li>Potencia pico de 2500 W.</li>
+                        <li>Control Bluetooth® App.</li>
+                        <li>DSP integrado.</li>
+                        <li>Wireless Stereo.</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">150 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;">Solicitar
+                            Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para CDJ-3000x -->
+    <div class="modal" id="modal-cdj">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://nodivadjs.com/wp-content/uploads/2025/09/kv_pc.webp" class="carousel-slide"
+                        alt="Pioneer CDJ-3000x">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771832770/3000x_front_tcyyk2.png"
+                        class="carousel-slide" alt="CDJ-3000x Front View">
+
+                    <button class="carousel-btn prev" id="cdj-prev">❮</button>
+                    <button class="carousel-btn next" id="cdj-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3>Pioneer CDJ 3000x</h3>
+                    <p>El reproductor multireproductor definitivo para DJs. Ofrece un nuevo nivel de control creativo,
+                        máxima estabilidad y un potente microprocesador avanzado (MPU).</p>
+                    <ul>
+                        <li>Pantalla táctil alta resolución.</li>
+                        <li>Procesador MPU.</li>
+                        <li>Componentes de audio rediseñados.</li>
+                        <li>Compatibilidad Rekordbox y link export.</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">120 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;"
+                            onclick="document.getElementById('modal-cdj').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para DJM-A9 -->
+    <div class="modal" id="modal-djm">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://www.stars-music.es/medias/pioneer/djm-a9-hd-8-196324.jpg" class="carousel-slide"
+                        alt="Pioneer DJM-A9">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771750388/A9_rgh0f1.png"
+                        class="carousel-slide" alt="Mixer Pioneer DJ DJM-A9 Back">
+
+                    <button class="carousel-btn prev" id="djm-prev">❮</button>
+                    <button class="carousel-btn next" id="djm-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3>Pioneer DJM A9</h3>
+                    <p>La mezcladora de 4 canales estéreo de última generación que define el nuevo estándar de la
+                        industria. Calidad y FX superiores.</p>
+                    <ul>
+                        <li>Sonido con mayor dimensión.</li>
+                        <li>Nuevos efectos Color FX.</li>
+                        <li>Micrófono rediseñada.</li>
+                        <li>Wi-Fi y Bluetooth integrados.</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">90 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;"
+                            onclick="document.getElementById('modal-djm').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Configura tu propio pack -->
+    <div class="modal" id="modal-pack">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container" id="pack-carousel-container">
+                    <div class="carousel-slide-wrapper carousel-slide active-overlay">
+                        <div class="carousel-text-overlay">Pack 1</div>
+                        <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753479/alphatheta-xdj-az-all-in-one_1_DJE0008565-000_kzmsin.jpg"
+                            alt="Pack 1" class="carousel-image">
+                    </div>
+                    <div class="carousel-slide-wrapper carousel-slide">
+                        <div class="carousel-text-overlay">Pack 2</div>
+                        <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753539/Intermedio_ad3sud.png"
+                            alt="Pack 2" class="carousel-image">
+                    </div>
+                    <div class="carousel-slide-wrapper carousel-slide">
+                        <div class="carousel-text-overlay">Pack 3</div>
+                        <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753497/premium_wtrebi.png"
+                            alt="Pack 3" class="carousel-image">
+                    </div>
+
+                    <button class="carousel-btn prev" id="pack-prev">❮</button>
+                    <button class="carousel-btn next" id="pack-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                        <div class="carousel-indicator" data-index="2"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Elige tu pack</h3>
+                    <p style="font-size: 0.95rem;">Organiza tu evento con el equipo audiovisual perfecto para reuniones,
+                        fiestas, conferencias u
+                        otros grandes eventos al aire libre o en interiores.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>Packs a medida según aforo.</li>
+                        <li>Montaje y desmontaje incluido.</li>
+                        <li>Técnico de sonido en el evento (Opcional).</li>
+                        <li>Primeras marcas certificadas.</li>
+                    </ul>
+
+                    <div style="margin-top: 1rem;">
+                        <label for="pack-selector"
+                            style="display: block; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Selecciona
+                            un Pack:</label>
+                        <select id="pack-selector"
+                            style="width: 100%; padding: 0.8rem; background: var(--bg-dark); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; font-size: 1rem; outline: none; cursor: pointer;">
+                            <option value="pack1" style="color: black;">Pack 1 / 190€</option>
+                            <option value="pack2" style="color: black;">Pack 2 / 300€</option>
+                            <option value="pack3" style="color: black;">Pack 3 / 450€</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; border: none; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-pack').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Sistema de sonido e iluminación -->
+    <div class="modal" id="modal-sonido">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771842395/EV1_ovi2m4.png"
+                        alt="Sonido 1" class="carousel-slide" id="sonido-slide-0">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771842395/EV2_qxnvgd.png"
+                        alt="Sonido 2" class="carousel-slide" id="sonido-slide-1">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771842395/EV3_vziir0.png"
+                        alt="Sonido 3" class="carousel-slide" id="sonido-slide-2">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771843370/EV4_bw90aq.png"
+                        alt="Sonido 4" class="carousel-slide" id="sonido-slide-3">
+
+                    <button class="carousel-btn prev" id="sonido-prev">❮</button>
+                    <button class="carousel-btn next" id="sonido-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                        <div class="carousel-indicator" data-index="2"></div>
+                        <div class="carousel-indicator" data-index="3"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Sistema de sonido</h3>
+                    <p style="font-size: 0.95rem;">Equipamos tu evento con Electro Voice uno los mejores sistemas
+                        autoamplificadosde del mercado.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>PA / ETX 15SP 2000w.</li>
+                        <li>SUB / ETX 18SP 1800w.</li>
+                        <li>Trípodes y cableado.</li>
+                        <li>Montaje y desmontaje incluidos.</li>
+                    </ul>
+                    <div style="margin-top: 1rem;">
+                        <label for="sonido-pack-selector"
+                            style="display: block; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Selecciona
+                            un Pack:</label>
+                        <select id="sonido-pack-selector"
+                            style="width: 100%; padding: 0.8rem; background: var(--bg-dark); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; font-size: 1rem; outline: none; cursor: pointer;">
+                            <option value="pack1" style="color: black;">Pack 1 / 180€</option>
+                            <option value="pack2" style="color: black;">Pack 2 / 300€</option>
+                            <option value="pack3" style="color: black;">Pack 3 / 420€</option>
+                            <option value="pack4" style="color: black;">Pack 4 / 540€</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-sonido').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Organización de eventos -->
+    <div class="modal" id="modal-organizacion">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771761736/dj-summadayze-melbourne-australia_1020609-29_juqsb6.jpg"
+                        alt="Organizacion 1" class="carousel-slide">
+
+                    <button class="carousel-btn prev" id="organizacion-prev">❮</button>
+                    <button class="carousel-btn next" id="organizacion-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Organización de eventos</h3>
+                    <p style="font-size: 0.95rem;">Organización de todo tipo de eventos, con un enfoque único,
+                        creativo y adaptado a tu presupuesto. Nos encargamos de todos los detalles.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>Planificación integral del evento.</li>
+                        <li>Coordinación de proveedores.</li>
+                        <li>Gestión técnica y artística.</li>
+                        <li>Adaptabilidad y personalización.</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-organizacion').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Pioneer DJM V10 -->
+    <div class="modal" id="modal-v10">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771762845/v10-2_w0zrnx.png"
+                        class="carousel-slide" alt="Pioneer DJM V10 Front">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771834550/53755_hash_escaped_14_ov65qk.jpg"
+                        class="carousel-slide" alt="Pioneer DJM V10 Action">
+
+                    <button class="carousel-btn prev" id="v10-prev">❮</button>
+                    <button class="carousel-btn next" id="v10-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3>Pioneer DJM V10</h3>
+                    <p>Mezclador profesional de 6 canales con calidad de audio de estudio. Forja un sonido único con el
+                        V10.</p>
+                    <ul>
+                        <li>DSP de 64 bits.</li>
+                        <li>Ecualizador de 4 bandas.</li>
+                        <li>Compresor por canal.</li>
+                        <li>Doble salida de auriculares.</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">110 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;"
+                            onclick="document.getElementById('modal-v10').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para AlphaTheta XDJ AZ -->
+    <div class="modal" id="modal-xdj">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753901/AZ_ingnjw.png"
+                        class="carousel-slide" alt="AlphaTheta XDJ AZ Front">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771753479/alphatheta-xdj-az-all-in-one_1_DJE0008565-000_kzmsin.jpg"
+                        class="carousel-slide" alt="AlphaTheta XDJ AZ Angle">
+
+                    <button class="carousel-btn prev" id="xdj-prev">❮</button>
+                    <button class="carousel-btn next" id="xdj-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3>AlphaTheta XDJ AZ</h3>
+                    <p>Sistema DJ todo en uno de 4 canales con el diseño de los CDJ-3000 y DJM-A9.</p>
+                    <ul>
+                        <li>Pantalla táctil de 10.1 pulgadas.</li>
+                        <li>Wi-Fi integrado para streaming y CloudDirectPlay.</li>
+                        <li>Soporta SonicLink para monitoreo inalámbrico.</li>
+                        <li>Calidad de sonido premium de 32 bits.</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">190 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;"
+                            onclick="document.getElementById('modal-xdj').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Micrófonía Inalámbrica -->
+    <div class="modal" id="modal-micro">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771797215/preview_l11ceu.jpg"
+                        class="carousel-slide" alt="Micrófono Inalámbrico Shure">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1771832185/micro_uwhvoq.jpg"
+                        class="carousel-slide" alt="Micrófono Inalámbrico Pro">
+
+                    <button class="carousel-btn prev" id="micro-prev">❮</button>
+                    <button class="carousel-btn next" id="micro-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3>Micrófonía Inalámbrica</h3>
+                    <p>Sistemas de microfonía profesional para voz clara y sin interferencias.</p>
+                    <ul>
+                        <li>Sistema inalámbrico de Shure</li>
+                        <li>Escaneo automático de frecuencias</li>
+                        <li>Baterías de larga duración</li>
+                        <li>Incluye receptor y maletín de transporte</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <div class="price-tag"
+                            style="position: static; transform: none; display: inline-block; margin-bottom: 1rem;">30 €
+                            / día</div>
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.9rem; width: 100%; text-align: center; display: block;"
+                            onclick="document.getElementById('modal-micro').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Cabinas -->
+    <div class="modal" id="modal-cabinas">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <!-- Videoclips de 4-5s (Reemplaza la URL por la de tus vídeos) -->
+                    <video
+                        src="https://res.cloudinary.com/dn9envyqj/video/upload/v1771885353/Video_De_Barrido_Con_Luces_Parpadeantes_rvfmic.mp4"
+                        class="carousel-slide" autoplay loop muted playsinline style="object-fit: cover;"></video>
+                    <video src="https://res.cloudinary.com/dn9envyqj/video/upload/v1771919659/djbooth_2_qmh7at.mp4"
+                        class="carousel-slide" autoplay loop muted playsinline style="object-fit: cover;"></video>
+                    <video src="https://res.cloudinary.com/dn9envyqj/video/upload/v1771920365/djbooth_1_j5hxj9.mp4"
+                        class="carousel-slide" autoplay loop muted playsinline style="object-fit: cover;"></video>
+                    <video src="https://res.cloudinary.com/dn9envyqj/video/upload/v1771920145/djbooth_4_zzks00.mp4"
+                        class="carousel-slide" autoplay loop muted playsinline style="object-fit: cover;"></video>
+
+                    <button class="carousel-btn prev" id="cabinas-prev">❮</button>
+                    <button class="carousel-btn next" id="cabinas-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                        <div class="carousel-indicator" data-index="2"></div>
+                        <div class="carousel-indicator" data-index="3"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Cabinas a medida</h3>
+                    <p style="font-size: 0.95rem;">Diseñamos tu DJ Set con la mejor configuración de sonido e
+                        iluminación ideal para tu evento.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>Diseño personalizado.</li>
+                        <li>Equipamiento técnico.</li>
+                        <li>Sonido e iluminación.</li>
+                        <li>Montaje y soporte técnico.</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-cabinas').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Cesta</h3>
+            <button class="cart-close-btn" id="close-cart" aria-label="Cerrar cesta">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items rendered by JS -->
+            <div class="cart-empty-message">La cesta está vacía.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total estimado:</span>
+                <span id="cart-total-price">0 €</span>
+            </div>
+            <a href="#contacto" class="btn" style="width: 100%; text-align: center;" id="checkout-btn">Solicitar y
+                Reservar</a>
+        </div>
+    </div>
+
+    <!-- 3. Lógica JavaScript (Performance Optimizada) -->
+    <script>
+        /* 
+         * DECISIONES DE ARQUITECTURA JS:
+         * 1. Vanilla JS total: Sin librerías pesadas (como jQuery o GSAP) para mantener el peso final cerca de 0kb y asegurar un Lighthouse de 95-100.
+         * 2. IntersectionObserver: Usado para las animaciones "reveal" on-scroll. Mucho más performante y amigable con el CPU móvil que escuchar el evento window.scroll constantemente.
+         */
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Efecto Scroll en Navbar
+            const nav = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(10, 10, 10, 0.98)';
+                    nav.style.padding = '1rem 0';
+                    nav.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+                    nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+                } else {
+                    nav.style.background = 'rgba(10, 10, 10, 0.85)';
+                    nav.style.padding = '1.5rem 0';
+                    nav.style.borderBottom = 'none';
+                    nav.style.boxShadow = 'none';
+                }
+            });
+
+            // 2. Mobile Nav Toggle
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                // Efecto icono
+                mobileBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+
+                // Bloquear scroll body cuando menú está abierto
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Cerrar menú móvil al clickear un link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileBtn.textContent = '☰';
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // 3. Reveal Animations (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const revealOptions = {
+                threshold: 0.15, // Ejecuta al 15% de visibilidad
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+
+                    // Añade la clase que dispara el CSS transition
+                    entry.target.classList.add('active');
+
+                    // Unobserve: Deja de trackear el elemento para ahorrar memoria, la animación ocurre solo 1 vez
+                    observer.unobserve(entry.target);
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
+
+            // 4. Modal & Carousel Logic (Generic function)
+            const openModal = (modalEl) => {
+                if (modalEl) {
+                    modalEl.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+            const closeModal = (modalEl) => {
+                if (modalEl) {
+                    modalEl.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            };
+
+            function setupModalWithCarousel(triggerId, modalId, prevId, nextId) {
+                const trigger = document.getElementById(triggerId);
+                const modal = document.getElementById(modalId);
+                if (!trigger || !modal) return;
+
+                // Open/Close
+                trigger.addEventListener('click', () => openModal(modal));
+                const closeBtn = modal.querySelector('.modal-close');
+                if (closeBtn) closeBtn.addEventListener('click', () => closeModal(modal));
+                modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(modal); });
+
+                // Carousel logic (if exists)
+                const slides = modal.querySelectorAll('.carousel-slide');
+                const indicators = modal.querySelectorAll('.carousel-indicator');
+                const prev = document.getElementById(prevId);
+                const next = document.getElementById(nextId);
+
+                if (slides.length > 0) {
+                    let current = 0;
+                    const update = () => {
+                        slides.forEach((s, idx) => {
+                            s.style.transform = `translateX(-${current * 100}%)`;
+                            // Manejar clase para animar overlay si es un wrapper
+                            if (s.classList.contains('carousel-slide-wrapper')) {
+                                if (idx === current) {
+                                    s.classList.add('active-overlay');
+                                } else {
+                                    s.classList.remove('active-overlay');
+                                }
+                            }
+                        });
+                        indicators.forEach((ind, i) => ind.classList.toggle('active', i === current));
+                    };
+
+                    if (prev) prev.addEventListener('click', () => {
+                        current = (current > 0) ? current - 1 : slides.length - 1;
+                        update();
+                    });
+                    if (next) next.addEventListener('click', () => {
+                        current = (current < slides.length - 1) ? current + 1 : 0;
+                        update();
+                    });
+                    indicators.forEach(ind => {
+                        ind.addEventListener('click', (e) => {
+                            current = parseInt(e.currentTarget.dataset.index);
+                            update();
+                        });
+                    });
+                }
+            }
+
+            // Initialize all modals
+            setupModalWithCarousel('trigger-cabinas', 'modal-cabinas', 'cabinas-prev', 'cabinas-next');
+            setupModalWithCarousel('trigger-pack', 'modal-pack', 'pack-prev', 'pack-next');
+            setupModalWithCarousel('trigger-sonido', 'modal-sonido', 'sonido-prev', 'sonido-next');
+
+            // Link selector to carousel for Sound System
+            const sonidoSelector = document.getElementById('sonido-pack-selector');
+            const sonidoIndicators = document.querySelectorAll('#modal-sonido .carousel-indicator');
+            if (sonidoSelector && sonidoIndicators.length > 0) {
+                sonidoSelector.addEventListener('change', (e) => {
+                    const selectedIndex = e.target.selectedIndex;
+                    if (selectedIndex >= 0 && selectedIndex < sonidoIndicators.length) {
+                        sonidoIndicators[selectedIndex].click();
+                    }
+                });
+            }
+
+            // Link selector to carousel for Pack Selection
+            const packSelector = document.getElementById('pack-selector');
+            const packIndicators = document.querySelectorAll('#modal-pack .carousel-indicator');
+            if (packSelector && packIndicators.length > 0) {
+                packSelector.addEventListener('change', (e) => {
+                    const selectedIndex = e.target.selectedIndex;
+                    if (selectedIndex >= 0 && selectedIndex < packIndicators.length) {
+                        packIndicators[selectedIndex].click();
+                    }
+                });
+            }
+
+            setupModalWithCarousel('trigger-organizacion', 'modal-organizacion', 'organizacion-prev', 'organizacion-next');
+            setupModalWithCarousel('trigger-monitores', 'modal-monitores', 'monitores-prev', 'monitores-next');
+            setupModalWithCarousel('trigger-cdj', 'modal-cdj', 'cdj-prev', 'cdj-next');
+            setupModalWithCarousel('trigger-djm', 'modal-djm', 'djm-prev', 'djm-next');
+            setupModalWithCarousel('trigger-v10', 'modal-v10', 'v10-prev', 'v10-next');
+            setupModalWithCarousel('trigger-xdj', 'modal-xdj', 'xdj-prev', 'xdj-next');
+            setupModalWithCarousel('trigger-micro', 'modal-micro', 'micro-prev', 'micro-next');
+
+            // 5. Lógica del Carrito de Compras
+            const cartItemsContainer = document.getElementById('cart-items-container');
+            const cartTotalPriceEl = document.getElementById('cart-total-price');
+            const cartCountEl = document.getElementById('cart-count');
+            const cartSidebar = document.getElementById('cart-sidebar');
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartTrigger = document.querySelector('.cart-trigger');
+            const cartCloseBtn = document.getElementById('close-cart');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            let cart = [];
+
+            // Funciones de UI del carrito
+            const openCart = () => {
+                cartSidebar.classList.add('active');
+                cartOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeCart = () => {
+                cartSidebar.classList.remove('active');
+                cartOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            if (cartTrigger) cartTrigger.addEventListener('click', openCart);
+            if (cartCloseBtn) cartCloseBtn.addEventListener('click', closeCart);
+            if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+            if (checkoutBtn) checkoutBtn.addEventListener('click', closeCart);
+
+            // Renderizar carrito
+            const updateCartUI = () => {
+                // Update badge
+                cartCountEl.textContent = cart.length;
+
+                // Render items
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<div class="cart-empty-message">La cesta está vacía.</div>';
+                    cartTotalPriceEl.textContent = '0 €';
+                    return;
+                }
+
+                cartItemsContainer.innerHTML = '';
+                let total = 0;
+
+                cart.forEach((item, index) => {
+                    total += parseFloat(item.price);
+
+                    const itemEl = document.createElement('div');
+                    itemEl.classList.add('cart-item');
+                    itemEl.innerHTML = `
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <p>${item.price} €</p>
+                        </div>
+                        <button class="cart-item-remove" data-index="${index}" aria-label="Eliminar producto">✕</button>
+                    `;
+                    cartItemsContainer.appendChild(itemEl);
+                });
+
+                cartTotalPriceEl.textContent = `${total} €`;
+
+                // Add event listeners to remove buttons
+                document.querySelectorAll('.cart-item-remove').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const index = e.target.getAttribute('data-index');
+                        removeFromCart(index);
+                    });
+                });
+            };
+
+            const addToCart = (productObj) => {
+                cart.push(productObj);
+                updateCartUI();
+                openCart(); // Opcional: abrir el carrito cuando se añade
+
+                // Cerrar modales activos
+                document.querySelectorAll('.modal.active').forEach(activeModal => {
+                    activeModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            };
+
+            const removeFromCart = (index) => {
+                cart.splice(index, 1);
+                updateCartUI();
+            };
+
+            // Escuchar botones de "Añadir a la cesta"
+            document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = e.target.getAttribute('data-id');
+                    let name = e.target.getAttribute('data-name');
+                    const basePrice = parseFloat(e.target.getAttribute('data-price'));
+
+                    let qty = 1;
+                    const qtySelectId = e.target.getAttribute('data-qty-id');
+                    if (qtySelectId) {
+                        const selectEl = document.getElementById(qtySelectId);
+                        if (selectEl) {
+                            qty = parseInt(selectEl.value);
+                            if (qty > 1) {
+                                name = `${name} (x${qty})`;
+                            }
+                        }
+                    }
+
+                    addToCart({ id, name, price: basePrice * qty });
+                });
+            });
+
+        });
+    </script>
+
+    <script>
+        /* ===========================
+         * LÓGICA PRESUPUESTO + CALENDARIO
+         * =========================== */
+        const presupuestoModal = document.getElementById('presupuesto-modal');
+        const openPresupuestoBtn = document.getElementById('open-presupuesto');
+        const closePresupuestoBtn = document.getElementById('close-presupuesto');
+
+        const openPresupuesto = () => {
+            presupuestoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            renderCalendar();
+        };
+        const closePresupuesto = () => {
+            presupuestoModal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        if (openPresupuestoBtn) openPresupuestoBtn.addEventListener('click', openPresupuesto);
+        if (closePresupuestoBtn) closePresupuestoBtn.addEventListener('click', closePresupuesto);
+        presupuestoModal.addEventListener('click', (e) => {
+            if (e.target === presupuestoModal) closePresupuesto();
+        });
+
+        // Hacer que los botones de los modales también abran el presupuesto
+        document.querySelectorAll('a[href="#contacto"]').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(openPresupuesto, 400);
+            });
+        });
+
+        // ===== CALENDARIO =====
+        let calYear = new Date().getFullYear();
+        let calMonth = new Date().getMonth();
+        let selectedStart = null;
+        let selectedEnd = null;
+        const MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        const today = new Date(); today.setHours(0, 0, 0, 0);
+
+        function renderCalendar() {
+            const grid = document.getElementById('calendar-grid');
+            const label = document.getElementById('cal-month-label');
+            if (!grid || !label) return;
+            label.textContent = `${MONTHS[calMonth]} ${calYear}`;
+            grid.innerHTML = '';
+
+            const firstDay = new Date(calYear, calMonth, 1);
+            // Start week on Monday (0=Mon..6=Sun)
+            let startOffset = firstDay.getDay() - 1;
+            if (startOffset < 0) startOffset = 6;
+
+            const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+            for (let i = 0; i < startOffset; i++) {
+                const empty = document.createElement('div');
+                empty.className = 'cal-day empty';
+                grid.appendChild(empty);
+            }
+
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dayEl = document.createElement('div');
+                dayEl.className = 'cal-day';
+                dayEl.textContent = d;
+                const thisDate = new Date(calYear, calMonth, d);
+
+                if (thisDate < today) {
+                    dayEl.classList.add('past');
+                } else {
+                    if (thisDate.getTime() === today.getTime()) dayEl.classList.add('today');
+                    if (selectedStart && thisDate.getTime() === selectedStart.getTime()) dayEl.classList.add('selected-start');
+                    if (selectedEnd && thisDate.getTime() === selectedEnd.getTime()) dayEl.classList.add('selected-end');
+                    if (selectedStart && selectedEnd && thisDate > selectedStart && thisDate < selectedEnd) dayEl.classList.add('in-range');
+
+                    dayEl.addEventListener('click', () => handleDayClick(new Date(calYear, calMonth, d)));
+                }
+                grid.appendChild(dayEl);
+            }
+        }
+
+        function handleDayClick(date) {
+            if (!selectedStart || (selectedStart && selectedEnd)) {
+                selectedStart = date;
+                selectedEnd = null;
+            } else {
+                if (date < selectedStart) {
+                    selectedEnd = selectedStart;
+                    selectedStart = date;
+                } else if (date.getTime() === selectedStart.getTime()) {
+                    selectedStart = null;
+                } else {
+                    selectedEnd = date;
+                }
+            }
+            updateDateDisplay();
+            renderCalendar();
+        }
+
+        function formatDate(d) {
+            return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`;
+        }
+
+        function updateDateDisplay() {
+            const display = document.getElementById('date-display');
+            const inputStart = document.getElementById('fecha-inicio');
+            const inputEnd = document.getElementById('fecha-fin');
+            if (!display) return;
+            if (selectedStart && selectedEnd) {
+                const diff = Math.round((selectedEnd - selectedStart) / (1000 * 60 * 60 * 24)) + 1;
+                display.textContent = `📅 Del ${formatDate(selectedStart)} al ${formatDate(selectedEnd)} — ${diff} día(s)`;
+                if (inputStart) inputStart.value = formatDate(selectedStart);
+                if (inputEnd) inputEnd.value = formatDate(selectedEnd);
+            } else if (selectedStart) {
+                display.textContent = `📅 Inicio: ${formatDate(selectedStart)} — Selecciona la fecha de fin.`;
+                if (inputStart) inputStart.value = formatDate(selectedStart);
+                if (inputEnd) inputEnd.value = '';
+            } else {
+                display.textContent = 'Selecciona la fecha de inicio del evento.';
+                if (inputStart) inputStart.value = '';
+                if (inputEnd) inputEnd.value = '';
+            }
+        }
+
+        document.getElementById('cal-prev').addEventListener('click', () => {
+            calMonth--;
+            if (calMonth < 0) { calMonth = 11; calYear--; }
+            renderCalendar();
+        });
+        document.getElementById('cal-next').addEventListener('click', () => {
+            calMonth++;
+            if (calMonth > 11) { calMonth = 0; calYear++; }
+            renderCalendar();
+        });
+
+        // ===== ENVÍO DEL FORMULARIO =====
+        function handlePresupuesto(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('pres-nombre').value;
+            const email = document.getElementById('pres-email').value;
+            const tel = document.getElementById('pres-telefono').value;
+            const tipo = document.getElementById('pres-tipo').value;
+            const lugar = document.getElementById('pres-lugar').value;
+            const horario = document.getElementById('pres-horario').value;
+            const notas = document.getElementById('pres-notas').value;
+            const fechaInicio = document.getElementById('fecha-inicio').value;
+            const fechaFin = document.getElementById('fecha-fin').value;
+
+            const productos = [];
+            document.querySelectorAll('#presupuesto-form .product-item').forEach(item => {
+                const cb = item.querySelector('input[type=checkbox]');
+                const qty = item.querySelector('input[type=number]');
+                if (cb && cb.checked) {
+                    productos.push(`${cb.value} (x${qty ? qty.value : 1})`);
+                }
+            });
+
+            let body = `Hola, me gustaría solicitar presupuesto:\n\n`;
+            body += `🎪 Tipo de evento: ${tipo || 'No especificado'}\n`;
+            body += `👤 Nombre: ${nombre}\n📧 Email: ${email}\n📞 Teléfono: ${tel}\n`;
+            body += `📍 Lugar: ${lugar || 'No especificado'}\n`;
+            body += `🕐 Horario: ${horario || 'No especificado'}\n`;
+            body += `📅 Fechas: ${fechaInicio || 'No especificado'}${fechaFin ? ` → ${fechaFin}` : ''}\n`;
+            body += `\n🎛️ Equipos:\n${productos.length ? productos.map(p => `  - ${p}`).join('\n') : '  (Ninguno seleccionado)'}\n`;
+            body += `\n💬 Notas: ${notas || 'Ninguna'}`;
+
+            const mailtoUrl = `mailto:musakrecords@gmail.com?subject=Solicitud%20de%20Presupuesto%20%E2%80%94%20${encodeURIComponent(nombre)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoUrl;
+        }
+
+        // ===== LÓGICA FORMULARIO DE CONTACTO DIRECTO =====
+        const directContactForm = document.getElementById('direct-contact-form');
+        const captchaCodeEl = document.getElementById('captcha-code');
+        let currentCaptcha = "";
+
+        function generateCaptcha() {
+            const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+            let code = "";
+            for (let i = 0; i < 6; i++) {
+                code += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            currentCaptcha = code;
+            if (captchaCodeEl) captchaCodeEl.textContent = code;
+        }
+
+        if (directContactForm) {
+            generateCaptcha();
+
+            directContactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const userInput = document.getElementById('captcha-input').value.toUpperCase();
+
+                if (userInput !== currentCaptcha) {
+                    alert('Código captcha incorrecto. Por favor, inténtalo de nuevo.');
+                    generateCaptcha();
+                    document.getElementById('captcha-input').value = "";
+                    return;
+                }
+
+                const name = document.getElementById('contact-name').value;
+                const email = document.getElementById('contact-email').value;
+                const tel = document.getElementById('contact-tel').value;
+                const msg = document.getElementById('contact-msg').value;
+
+                let body = `Hola Musak Lab, he recibido un contacto desde la web:\n\n`;
+                body += `👤 Nombre: ${name}\n`;
+                body += `📧 Email: ${email}\n`;
+                body += `📞 Teléfono: ${tel}\n`;
+                body += `💬 Mensaje: ${msg || 'Sin comentarios'}\n`;
+
+                const mailtoUrl = `mailto:musakrecords@gmail.com?subject=Contacto%20desde%20la%20Web%20%E2%80%94%20${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoUrl;
+
+                // Reset form and captcha
+                directContactForm.reset();
+                generateCaptcha();
+            });
+        }
+    </script>
+</body>
+
+</html>
