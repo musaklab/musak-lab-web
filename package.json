@@ -1,5 +1,5 @@
 {
-  "name": "musak-lab-web",
+  "name": "musak-lab",
   "version": "1.0.0",
   "scripts": {
     "build": "mkdir -p public && cp index.html public/ && cp -r assets public/assets || true"
