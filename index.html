@@ -565,6 +565,7 @@
         #modal-micro .modal-content,
         #modal-pack .modal-content,
         #modal-sonido .modal-content,
+        #modal-sonido-pasivo .modal-content,
         #modal-organizacion .modal-content,
         #modal-cabinas .modal-content {
             max-width: 1100px;
@@ -580,6 +581,7 @@
             #modal-micro .carousel-container,
             #modal-pack .carousel-container,
             #modal-sonido .carousel-container,
+            #modal-sonido-pasivo .carousel-container,
             #modal-organizacion .carousel-container,
             #modal-cabinas .carousel-container {
                 width: 70%;
@@ -594,6 +596,7 @@
             #modal-micro .modal-info,
             #modal-pack .modal-info,
             #modal-sonido .modal-info,
+            #modal-sonido-pasivo .modal-info,
             #modal-organizacion .modal-info,
             #modal-cabinas .modal-info {
                 width: 30%;
@@ -1953,6 +1956,18 @@
                 </div>
                 <div class="modal-info modal-pack-info">
                     <h3 style="font-size: 1.5rem;">Sistema de sonido</h3>
+
+                    <div style="margin-top: 1rem; margin-bottom: 1rem;">
+                        <label for="tipo-sonido-selector-activo"
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; font-weight: 600;">Tecnología
+                            del Sistema:</label>
+                        <select id="tipo-sonido-selector-activo"
+                            style="width: 100%; padding: 0.8rem; background: var(--bg-light); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; font-size: 1rem; outline: none; cursor: pointer;"
+                            onchange="if(this.value === 'pasivos') { document.getElementById('modal-sonido').classList.remove('active'); document.getElementById('modal-sonido-pasivo').classList.add('active'); this.value = 'activos'; }">
+                            <option value="activos" style="color: black;" selected>Activos (Autoamplificados)</option>
+                            <option value="pasivos" style="color: black;">Pasivos</option>
+                        </select>
+                    </div>
                     <p style="font-size: 0.95rem;">Equipamos tu evento con Electro Voice uno los mejores sistemas
                         autoamplificadosde del mercado.</p>
                     <ul style="font-size: 0.9rem;">
@@ -1978,6 +1993,71 @@
                             style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; font-size: 1rem; font-weight: 600;"
                             onclick="document.getElementById('modal-sonido').classList.remove('active'); document.body.style.overflow = '';">Solicitar
                             Presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML Modal Dinámico para Sistema de sonido (Pasivos) -->
+    <div class="modal" id="modal-sonido-pasivo">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?w=800&q=80"
+                        alt="Sonido Pasivo 1" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80"
+                        alt="Sonido Pasivo 2" class="carousel-slide" style="object-fit: cover;">
+
+                    <button class="carousel-btn prev" id="sonido-pasivo-prev">❮</button>
+                    <button class="carousel-btn next" id="sonido-pasivo-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Sistema de sonido</h3>
+
+                    <div style="margin-top: 1rem; margin-bottom: 1rem;">
+                        <label for="tipo-sonido-selector-pasivo"
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; font-weight: 600;">Tecnología
+                            del Sistema:</label>
+                        <select id="tipo-sonido-selector-pasivo"
+                            style="width: 100%; padding: 0.8rem; background: var(--bg-light); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; font-size: 1rem; outline: none; cursor: pointer;"
+                            onchange="if(this.value === 'activos') { document.getElementById('modal-sonido-pasivo').classList.remove('active'); document.getElementById('modal-sonido').classList.add('active'); this.value = 'pasivos'; }">
+                            <option value="activos" style="color: black;">Activos (Autoamplificados)</option>
+                            <option value="pasivos" style="color: black;" selected>Pasivos</option>
+                        </select>
+                    </div>
+
+                    <p style="font-size: 0.95rem;">Contamos con robustos sistemas acústicos pasivos controlados
+                        por etapas de potencia profesionales para la máxima presión sonora.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>Altavoces Pasivos de alto rango.</li>
+                        <li>Racks de etapas con procesador DSP.</li>
+                        <li>Cableado profesional Neutrik.</li>
+                        <li>Montaje y desmontaje incluidos.</li>
+                    </ul>
+
+                    <div style="margin-top: 1rem;">
+                        <label for="sonido-pasivo-pack-selector"
+                            style="display: block; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Selecciona
+                            un Pack:</label>
+                        <select id="sonido-pasivo-pack-selector"
+                            style="width: 100%; padding: 0.8rem; background: var(--bg-dark); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; font-size: 1rem; outline: none; cursor: pointer;">
+                            <option value="pack1" style="color: black;">Pack 1 / Consultar</option>
+                            <option value="pack2" style="color: black;">Pack 2 / Consultar</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; border: none; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-sonido-pasivo').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
                     </div>
                 </div>
             </div>
@@ -2308,12 +2388,12 @@
             };
 
             function setupModalWithCarousel(triggerId, modalId, prevId, nextId) {
-                const trigger = document.getElementById(triggerId);
+                const trigger = triggerId ? document.getElementById(triggerId) : null;
                 const modal = document.getElementById(modalId);
-                if (!trigger || !modal) return;
+                if (!modal) return;
 
                 // Open/Close
-                trigger.addEventListener('click', () => openModal(modal));
+                if (trigger) trigger.addEventListener('click', () => openModal(modal));
                 const closeBtn = modal.querySelector('.modal-close');
                 if (closeBtn) closeBtn.addEventListener('click', () => closeModal(modal));
                 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(modal); });
@@ -2362,6 +2442,7 @@
             setupModalWithCarousel('trigger-cabinas', 'modal-cabinas', 'cabinas-prev', 'cabinas-next');
             setupModalWithCarousel('trigger-pack', 'modal-pack', 'pack-prev', 'pack-next');
             setupModalWithCarousel('trigger-sonido', 'modal-sonido', 'sonido-prev', 'sonido-next');
+            setupModalWithCarousel(null, 'modal-sonido-pasivo', 'sonido-pasivo-prev', 'sonido-pasivo-next');
 
             // Link selector to carousel for Sound System
             const sonidoSelector = document.getElementById('sonido-pack-selector');
@@ -2383,6 +2464,18 @@
                     const selectedIndex = e.target.selectedIndex;
                     if (selectedIndex >= 0 && selectedIndex < packIndicators.length) {
                         packIndicators[selectedIndex].click();
+                    }
+                });
+            }
+
+            // Link selector to carousel for Sound System Pasivos
+            const sonidoPasivoSelector = document.getElementById('sonido-pasivo-pack-selector');
+            const sonidoPasivoIndicators = document.querySelectorAll('#modal-sonido-pasivo .carousel-indicator');
+            if (sonidoPasivoSelector && sonidoPasivoIndicators.length > 0) {
+                sonidoPasivoSelector.addEventListener('change', (e) => {
+                    const selectedIndex = e.target.selectedIndex;
+                    if (selectedIndex >= 0 && selectedIndex < sonidoPasivoIndicators.length) {
+                        sonidoPasivoIndicators[selectedIndex].click();
                     }
                 });
             }
