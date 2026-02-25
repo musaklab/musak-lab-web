@@ -597,6 +597,7 @@
         #modal-sonido .modal-content,
         #modal-sonido-pasivo .modal-content,
         #modal-organizacion .modal-content,
+        #modal-iluminacion .modal-content,
         #modal-cabinas .modal-content {
             max-width: 1100px;
         }
@@ -613,6 +614,7 @@
             #modal-sonido .carousel-container,
             #modal-sonido-pasivo .carousel-container,
             #modal-organizacion .carousel-container,
+            #modal-iluminacion .carousel-container,
             #modal-cabinas .carousel-container {
                 width: 70%;
                 /* Aproximadamente 3/4 */
@@ -628,6 +630,7 @@
             #modal-sonido .modal-info,
             #modal-sonido-pasivo .modal-info,
             #modal-organizacion .modal-info,
+            #modal-iluminacion .modal-info,
             #modal-cabinas .modal-info {
                 width: 30%;
                 /* El resto */
@@ -1256,7 +1259,7 @@
                 </div>
             </article>
             <!-- Bento Box 5 -->
-            <article class="bento-item reveal" id="trigger-sonido" style="cursor: pointer;">
+            <article class="bento-item reveal" id="trigger-iluminacion" style="cursor: pointer;">
                 <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015097/Light4_opmctk.png"
                     alt="Sistema de iluminación" class="bento-bg" loading="lazy">
                 <div class="bento-content">
@@ -1807,6 +1810,63 @@
         </div>
     </div>
 
+    <!-- HTML Modal Dinámico para Sistema de iluminación -->
+    <div class="modal" id="modal-iluminacion">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">✕</button>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <video src="https://res.cloudinary.com/dn9envyqj/video/upload/v1772015102/Light1_m9s3go.mp4"
+                        class="carousel-slide" autoplay loop muted playsinline style="object-fit: cover;"></video>
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015097/Light6_hegwff.png"
+                        alt="Sistema de iluminación 2" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015097/Light7_rhzdkv.png"
+                        alt="Sistema de iluminación 3" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015097/Light4_opmctk.png"
+                        alt="Sistema de iluminación 4" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015098/Light5_td1dt4.png"
+                        alt="Sistema de iluminación 5" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015097/Light3_ky141t.png"
+                        alt="Sistema de iluminación 6" class="carousel-slide" style="object-fit: cover;">
+                    <img src="https://res.cloudinary.com/dn9envyqj/image/upload/v1772015098/Light8_qe0btl.png"
+                        alt="Sistema de iluminación 7" class="carousel-slide" style="object-fit: cover;">
+
+                    <button class="carousel-btn prev" id="iluminacion-prev">❮</button>
+                    <button class="carousel-btn next" id="iluminacion-next">❯</button>
+
+                    <div class="carousel-indicators">
+                        <div class="carousel-indicator active" data-index="0"></div>
+                        <div class="carousel-indicator" data-index="1"></div>
+                        <div class="carousel-indicator" data-index="2"></div>
+                        <div class="carousel-indicator" data-index="3"></div>
+                        <div class="carousel-indicator" data-index="4"></div>
+                        <div class="carousel-indicator" data-index="5"></div>
+                        <div class="carousel-indicator" data-index="6"></div>
+                    </div>
+                </div>
+                <div class="modal-info modal-pack-info">
+                    <h3 style="font-size: 1.5rem;">Sistema de iluminación</h3>
+                    <p style="font-size: 0.95rem;">Contamos con los sistemas de iluminación más avanzados y versátiles,
+                        capaces de transformar cualquier espacio en una experiencia visual única.</p>
+                    <ul style="font-size: 0.9rem;">
+                        <li>Cabezas móviles Beam/Spot/Wash.</li>
+                        <li>Focos Par LED RGBW y de batería.</li>
+                        <li>Barras LED motorizadas.</li>
+                        <li>Mesas de luces DMX profesionales.</li>
+                        <li>Máquinas de humo y luces FX.</li>
+                        <li>Montaje técnico especializado.</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+                        <a href="#contacto" class="btn"
+                            style="padding: 0.8rem 2rem; background-color: var(--accent-red); flex-grow: 1; text-align: center; color: white; border: none; font-size: 1rem; font-weight: 600;"
+                            onclick="document.getElementById('modal-iluminacion').classList.remove('active'); document.body.style.overflow = '';">Solicitar
+                            presupuesto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- HTML Modal Dinámico para Sistema de sonido (Pasivos) -->
     <div class="modal" id="modal-sonido-pasivo">
         <div class="modal-content">
@@ -2230,6 +2290,7 @@
             setupModalWithCarousel('trigger-cabinas', 'modal-cabinas', 'cabinas-prev', 'cabinas-next');
             setupModalWithCarousel('trigger-pack', 'modal-pack', 'pack-prev', 'pack-next');
             setupModalWithCarousel('trigger-sonido', 'modal-sonido', 'sonido-prev', 'sonido-next');
+            setupModalWithCarousel('trigger-iluminacion', 'modal-iluminacion', 'iluminacion-prev', 'iluminacion-next');
             setupModalWithCarousel(null, 'modal-sonido-pasivo', 'sonido-pasivo-prev', 'sonido-pasivo-next');
 
             // Link selector to carousel for Sound System
