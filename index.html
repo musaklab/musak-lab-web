@@ -1425,54 +1425,10 @@
                 </div>
 
                 <div class="form-section-title">¿Qué necesitas?</div>
-                <div class="product-list">
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Cabinas y setups de DJ">Cabina completa
-                            de DJ. (setup y sonido)</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Organizacion de eventos">Cabina completa
-                            de DJ. (solo setup)</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Sistema de sonido e iluminacion">Sistema
-                            de sonido</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Configura tu propio pack">Organizar un
-                            evento (Boda, fiesta privada, etc...)</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="CDJ-3000x">CDJ-3000x</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="4">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Pioneer DJM-A9">Pioneer DJM-A9</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="4">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Pioneer DJM V10">Pioneer DJM V10</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="4">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="AlphaTheta XDJ-AZ">AlphaTheta
-                            XDJ-AZ</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="4">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Monitores Alto 15TS">Monitores Alto
-                            15TS</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
-                    <div class="product-item">
-                        <label><input type="checkbox" name="productos" value="Microfono Inalambrico Shure">Micrófono
-                            Shure Inalambrico</label>
-                        <input type="number" class="product-qty" value="1" min="1" max="10">
-                    </div>
+                <div class="product-list" style="grid-template-columns: 1fr;">
+                    <textarea id="necesidades-texto" name="necesidades" rows="4"
+                        style="width: 100%; padding: 1rem; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: white; font-family: inherit; font-size: 0.95rem; resize: vertical;"
+                        placeholder="Ej: Necesito dos CDJs, una mesa de mezclas y un sistema de sonido para 50 personas..."></textarea>
                 </div>
 
                 <div class="form-section-title">Fechas de Reserva</div>
@@ -2445,14 +2401,7 @@
             const fechaInicio = document.getElementById('fecha-inicio').value;
             const fechaFin = document.getElementById('fecha-fin').value;
 
-            const productos = [];
-            document.querySelectorAll('#presupuesto-form .product-item').forEach(item => {
-                const cb = item.querySelector('input[type=checkbox]');
-                const qty = item.querySelector('input[type=number]');
-                if (cb && cb.checked) {
-                    productos.push(`${cb.value} (x${qty ? qty.value : 1})`);
-                }
-            });
+            const necesidades = document.getElementById('necesidades-texto') ? document.getElementById('necesidades-texto').value : '';
 
             let body = `Hola, me gustaría solicitar presupuesto:\n\n`;
             body += `🎪 Tipo de evento: ${tipo || 'No especificado'}\n`;
@@ -2460,7 +2409,7 @@
             body += `📍 Lugar: ${lugar || 'No especificado'}\n`;
             body += `🕐 Horario: ${horario || 'No especificado'}\n`;
             body += `📅 Fechas: ${fechaInicio || 'No especificado'}${fechaFin ? ` → ${fechaFin}` : ''}\n`;
-            body += `\n🎛️ Equipos:\n${productos.length ? productos.map(p => `  - ${p}`).join('\n') : '  (Ninguno seleccionado)'}\n`;
+            body += `\n📦 ¿Qué necesitas?:\n${necesidades || 'No especificado'}\n`;
             body += `\n💬 Notas: ${notas || 'Ninguna'}`;
 
             const mailtoUrl = `mailto:musakrecords@gmail.com?subject=Solicitud%20de%20Presupuesto%20%E2%80%94%20${encodeURIComponent(nombre)}&body=${encodeURIComponent(body)}`;
