@@ -432,8 +432,36 @@
             transform: translateY(0);
         }
 
+        .nav-logo-img {
+            height: 90px;
+            width: auto;
+            object-fit: contain;
+            transition: height 0.3s ease;
+        }
+
         /* Responsive Mobile */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+
+            .nav-logo-img {
+                height: 65px;
+            }
+
+            .bento-item {
+                padding: 1.5rem;
+                min-height: 250px;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .section-title {
+                margin-bottom: 2.5rem;
+            }
+
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -446,7 +474,7 @@
                 align-items: center;
                 transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
                 z-index: 999;
-                gap: 3rem;
+                gap: 2.5rem;
             }
 
             .nav-links.active {
@@ -454,7 +482,7 @@
             }
 
             .nav-links a {
-                font-size: 1.5rem;
+                font-size: 1.35rem;
             }
 
             .mobile-menu-btn {
@@ -1132,8 +1160,7 @@
     <nav id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="assets/logo_black_red.png" alt="MUSAK LAB Logo"
-                    style="height: 90px; width: auto; object-fit: contain;">
+                <img src="assets/logo_black_red.png" alt="MUSAK LAB Logo" class="nav-logo-img">
             </a>
             <button class="mobile-menu-btn" aria-label="Menú">☰</button>
             <ul class="nav-links">
